@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sex View Controller-->
+        <scene sceneID="duM-0F-XL8">
+            <objects>
+                <viewController storyboardIdentifier="ToSexVC" id="jUI-n8-zEi" customClass="SexViewController" customModule="Drink_Up" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Xv-Ej-80X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QH6-IU-YVn">
+                                <rect key="frame" x="0.0" y="243.5" width="414" height="409"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cY-4h-cKg">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="136.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                        <state key="normal" title="Мужчина">
+                                            <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="jUI-n8-zEi" eventType="touchUpInside" id="Jk3-E8-UFr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMd-wE-df7">
+                                        <rect key="frame" x="0.0" y="136.5" width="414" height="136"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                        <state key="normal" title="Женщина">
+                                            <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="jUI-n8-zEi" eventType="touchUpInside" id="x5H-rO-JjW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="db5-at-QWf">
+                                        <rect key="frame" x="0.0" y="272.5" width="414" height="136.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                        <state key="normal" title="Ребенок">
+                                            <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="jUI-n8-zEi" eventType="touchUpInside" id="NE5-uR-K8z"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QH6-IU-YVn" firstAttribute="width" secondItem="BRg-1k-Gpj" secondAttribute="width" id="Dv2-MR-xlU"/>
+                            <constraint firstItem="QH6-IU-YVn" firstAttribute="centerY" secondItem="8Xv-Ej-80X" secondAttribute="centerY" id="dXT-SZ-ITd"/>
+                            <constraint firstItem="QH6-IU-YVn" firstAttribute="centerX" secondItem="8Xv-Ej-80X" secondAttribute="centerX" id="mH9-4Q-Dgn"/>
+                            <constraint firstItem="QH6-IU-YVn" firstAttribute="height" secondItem="BRg-1k-Gpj" secondAttribute="height" multiplier="0.5" id="riQ-nM-sAr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BRg-1k-Gpj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HX6-nM-kn5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oAk-e5-Aa8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2606" y="135"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bottles View Controller-->
+        <scene sceneID="7F9-dw-Oiy">
+            <objects>
+                <viewController storyboardIdentifier="ToBottlesVC" id="ZFp-KM-iez" customClass="BottlesViewController" customModule="Drink_Up" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eqW-kc-s2X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFd-9T-mhC">
+                                <rect key="frame" x="47" y="340" width="320" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrw-wW-2c7">
+                                <rect key="frame" x="20" y="775" width="374" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="aGZ-J4-VUL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <state key="normal" title="Далее">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed" destination="ZFp-KM-iez" eventType="touchUpInside" id="pYB-9z-oUC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RFd-9T-mhC" firstAttribute="centerY" secondItem="eqW-kc-s2X" secondAttribute="centerY" id="DBF-WP-HGC"/>
+                            <constraint firstItem="rrw-wW-2c7" firstAttribute="leading" secondItem="Iws-Hz-Ojz" secondAttribute="leading" constant="20" id="GOO-Ml-pps"/>
+                            <constraint firstItem="Iws-Hz-Ojz" firstAttribute="bottom" secondItem="rrw-wW-2c7" secondAttribute="bottom" constant="32" id="PK6-LA-T13"/>
+                            <constraint firstItem="RFd-9T-mhC" firstAttribute="centerX" secondItem="eqW-kc-s2X" secondAttribute="centerX" id="hbJ-Jj-r95"/>
+                            <constraint firstItem="Iws-Hz-Ojz" firstAttribute="trailing" secondItem="rrw-wW-2c7" secondAttribute="trailing" constant="20" id="hkL-09-RAN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Iws-Hz-Ojz"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="QJK-9j-2W9"/>
+                    <connections>
+                        <outlet property="bottlesCountPicker" destination="RFd-9T-mhC" id="yD5-AY-3YL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UuP-AY-2L7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1746" y="132"/>
+        </scene>
+    </scenes>
+</document>

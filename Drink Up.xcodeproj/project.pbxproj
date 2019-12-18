@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9544DC2123A99910009C4C53 /* Bottles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9544DC2023A99910009C4C53 /* Bottles.storyboard */; };
+		9544DC2323A99921009C4C53 /* Sex.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9544DC2223A99921009C4C53 /* Sex.storyboard */; };
+		9544DC2523A99940009C4C53 /* WeightAndHeight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9544DC2423A99940009C4C53 /* WeightAndHeight.storyboard */; };
+		9544DC2723A9994F009C4C53 /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9544DC2623A9994F009C4C53 /* Result.storyboard */; };
+		9544DC2A23A99F04009C4C53 /* StrenghtExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9544DC2923A99F04009C4C53 /* StrenghtExtension.swift */; };
+		9544DC2D23A99F8F009C4C53 /* BottlesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9544DC2C23A99F8F009C4C53 /* BottlesExtension.swift */; };
+		9544DC3023A9A011009C4C53 /* SexExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9544DC2F23A9A011009C4C53 /* SexExtension.swift */; };
+		9544DC3323A9A076009C4C53 /* WeightAndHeightExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9544DC3223A9A076009C4C53 /* WeightAndHeightExtension.swift */; };
 		95FDD86B23A12CE100F4519B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FDD86A23A12CE100F4519B /* AppDelegate.swift */; };
 		95FDD86D23A12CE100F4519B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FDD86C23A12CE100F4519B /* SceneDelegate.swift */; };
-		95FDD87223A12CE100F4519B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95FDD87023A12CE100F4519B /* Main.storyboard */; };
+		95FDD87223A12CE100F4519B /* Strenght.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95FDD87023A12CE100F4519B /* Strenght.storyboard */; };
 		95FDD87423A12CE300F4519B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95FDD87323A12CE300F4519B /* Assets.xcassets */; };
 		95FDD87723A12CE300F4519B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95FDD87523A12CE300F4519B /* LaunchScreen.storyboard */; };
 		95FDD88223A12CE300F4519B /* Drink_UpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FDD88123A12CE300F4519B /* Drink_UpTests.swift */; };
@@ -32,10 +40,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9544DC2023A99910009C4C53 /* Bottles.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bottles.storyboard; sourceTree = "<group>"; };
+		9544DC2223A99921009C4C53 /* Sex.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sex.storyboard; sourceTree = "<group>"; };
+		9544DC2423A99940009C4C53 /* WeightAndHeight.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeightAndHeight.storyboard; sourceTree = "<group>"; };
+		9544DC2623A9994F009C4C53 /* Result.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Result.storyboard; sourceTree = "<group>"; };
+		9544DC2923A99F04009C4C53 /* StrenghtExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrenghtExtension.swift; sourceTree = "<group>"; };
+		9544DC2C23A99F8F009C4C53 /* BottlesExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottlesExtension.swift; sourceTree = "<group>"; };
+		9544DC2F23A9A011009C4C53 /* SexExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexExtension.swift; sourceTree = "<group>"; };
+		9544DC3223A9A076009C4C53 /* WeightAndHeightExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightAndHeightExtension.swift; sourceTree = "<group>"; };
 		95FDD86723A12CE100F4519B /* Drink Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drink Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95FDD86A23A12CE100F4519B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95FDD86C23A12CE100F4519B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		95FDD87123A12CE100F4519B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95FDD87123A12CE100F4519B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Strenght.storyboard; sourceTree = "<group>"; };
 		95FDD87323A12CE300F4519B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95FDD87623A12CE300F4519B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95FDD87823A12CE300F4519B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,6 +84,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9544DC2823A99EC0009C4C53 /* Strenght */ = {
+			isa = PBXGroup;
+			children = (
+				95FDD88E23A14A3600F4519B /* StrenghtViewController.swift */,
+				95FDD87023A12CE100F4519B /* Strenght.storyboard */,
+				9544DC2923A99F04009C4C53 /* StrenghtExtension.swift */,
+			);
+			path = Strenght;
+			sourceTree = "<group>";
+		};
+		9544DC2B23A99F5B009C4C53 /* Bottles */ = {
+			isa = PBXGroup;
+			children = (
+				95FDD89223A160FC00F4519B /* BottlesViewController.swift */,
+				9544DC2023A99910009C4C53 /* Bottles.storyboard */,
+				9544DC2C23A99F8F009C4C53 /* BottlesExtension.swift */,
+			);
+			path = Bottles;
+			sourceTree = "<group>";
+		};
+		9544DC2E23A99FF8009C4C53 /* Sex */ = {
+			isa = PBXGroup;
+			children = (
+				95FDD89423A1653400F4519B /* SexViewController.swift */,
+				9544DC2223A99921009C4C53 /* Sex.storyboard */,
+				9544DC2F23A9A011009C4C53 /* SexExtension.swift */,
+			);
+			path = Sex;
+			sourceTree = "<group>";
+		};
+		9544DC3123A9A038009C4C53 /* WeightAndHeight */ = {
+			isa = PBXGroup;
+			children = (
+				95FDD89723A1669200F4519B /* WeightViewController.swift */,
+				9544DC2423A99940009C4C53 /* WeightAndHeight.storyboard */,
+				9544DC3223A9A076009C4C53 /* WeightAndHeightExtension.swift */,
+			);
+			path = WeightAndHeight;
+			sourceTree = "<group>";
+		};
+		9544DC3623A9A0B9009C4C53 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				95FDD89023A1577900F4519B /* ResultViewController.swift */,
+				9544DC2623A9994F009C4C53 /* Result.storyboard */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
 		95FDD85E23A12CE100F4519B = {
 			isa = PBXGroup;
 			children = (
@@ -92,8 +157,7 @@
 				95FDD86A23A12CE100F4519B /* AppDelegate.swift */,
 				95FDD86C23A12CE100F4519B /* SceneDelegate.swift */,
 				95FDD89923A16CAC00F4519B /* Model */,
-				95FDD87023A12CE100F4519B /* Main.storyboard */,
-				95FDD89623A1665200F4519B /* Controllers */,
+				95FDD89623A1665200F4519B /* Views and Controllers */,
 				95FDD87323A12CE300F4519B /* Assets.xcassets */,
 				95FDD87523A12CE300F4519B /* LaunchScreen.storyboard */,
 				95FDD87823A12CE300F4519B /* Info.plist */,
@@ -110,16 +174,16 @@
 			path = "Drink UpTests";
 			sourceTree = "<group>";
 		};
-		95FDD89623A1665200F4519B /* Controllers */ = {
+		95FDD89623A1665200F4519B /* Views and Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				95FDD88E23A14A3600F4519B /* StrenghtViewController.swift */,
-				95FDD89223A160FC00F4519B /* BottlesViewController.swift */,
-				95FDD89423A1653400F4519B /* SexViewController.swift */,
-				95FDD89723A1669200F4519B /* WeightViewController.swift */,
-				95FDD89023A1577900F4519B /* ResultViewController.swift */,
+				9544DC2823A99EC0009C4C53 /* Strenght */,
+				9544DC2B23A99F5B009C4C53 /* Bottles */,
+				9544DC2E23A99FF8009C4C53 /* Sex */,
+				9544DC3123A9A038009C4C53 /* WeightAndHeight */,
+				9544DC3623A9A0B9009C4C53 /* Result */,
 			);
-			path = Controllers;
+			path = "Views and Controllers";
 			sourceTree = "<group>";
 		};
 		95FDD89923A16CAC00F4519B /* Model */ = {
@@ -211,9 +275,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9544DC2723A9994F009C4C53 /* Result.storyboard in Resources */,
 				95FDD87723A12CE300F4519B /* LaunchScreen.storyboard in Resources */,
+				9544DC2523A99940009C4C53 /* WeightAndHeight.storyboard in Resources */,
 				95FDD87423A12CE300F4519B /* Assets.xcassets in Resources */,
-				95FDD87223A12CE100F4519B /* Main.storyboard in Resources */,
+				9544DC2323A99921009C4C53 /* Sex.storyboard in Resources */,
+				9544DC2123A99910009C4C53 /* Bottles.storyboard in Resources */,
+				95FDD87223A12CE100F4519B /* Strenght.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,9 +304,13 @@
 				95FDD86B23A12CE100F4519B /* AppDelegate.swift in Sources */,
 				95FDD88F23A14A3600F4519B /* StrenghtViewController.swift in Sources */,
 				95FDD89823A1669200F4519B /* WeightViewController.swift in Sources */,
+				9544DC2A23A99F04009C4C53 /* StrenghtExtension.swift in Sources */,
 				95FDD86D23A12CE100F4519B /* SceneDelegate.swift in Sources */,
 				95FDD89523A1653400F4519B /* SexViewController.swift in Sources */,
 				95FDD88D23A131A900F4519B /* Model.swift in Sources */,
+				9544DC2D23A99F8F009C4C53 /* BottlesExtension.swift in Sources */,
+				9544DC3323A9A076009C4C53 /* WeightAndHeightExtension.swift in Sources */,
+				9544DC3023A9A011009C4C53 /* SexExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,12 +333,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		95FDD87023A12CE100F4519B /* Main.storyboard */ = {
+		95FDD87023A12CE100F4519B /* Strenght.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				95FDD87123A12CE100F4519B /* Base */,
 			);
-			name = Main.storyboard;
+			name = Strenght.storyboard;
 			sourceTree = "<group>";
 		};
 		95FDD87523A12CE300F4519B /* LaunchScreen.storyboard */ = {

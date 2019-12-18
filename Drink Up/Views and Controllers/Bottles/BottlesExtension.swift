@@ -1,51 +1,40 @@
 //
-//  BottlesViewController.swift
+//  BottlesExtension.swift
 //  Drink Up
 //
-//  Created by  Alexander on 11.12.2019.
+//  Created by  Alexander on 18.12.2019.
 //  Copyright © 2019  Alexander. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class BottlesViewController: UIViewController {
- 
-    @IBOutlet weak var bottlesCountPicker: UIPickerView!
-    private let rangeArray = [0, 0.5, 1, 1.5] + Array(2...100)
-    private var bottlesCount = 0.0
-    var strenght = 0.0
-  
+extension BottlesViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    func push() {
+        let storyboard = UIStoryboard(name: "Sex",
+                                      bundle: nil)
+        
+        let vc = storyboard.instantiateViewController(withIdentifier: "ToSexVC") as? SexViewController
+        vc?.model = model
+        print("\(vc!.model)")
+        navigationController?.pushViewController(vc!,
+                                                 animated: true)
+        navigationItem.title = "Объем выпитого"
+    }
+    
+    //MARK:- ViewController life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         bottlesCountPicker.delegate = self
         bottlesCountPicker.dataSource = self
+        navigationItem.title = "Объем выпитого"
     }
- 
-    // MARK: - Navigation
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        guard let vc = segue.destination as? SexViewController else { return }
-        
-        switch strenght {
-        case 0.5:
-            bottlesCount *= 500
-        case 0.4:
-        bottlesCount *= 700
-        case 0.12:
-            bottlesCount *= 700
-        default:
-            break
-        }
-        vc.strenght = strenght
-        vc.bottlesCount = Double(bottlesCount)
-        
-    }
-}
-
-    // MARK: - Extension
-extension BottlesViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    //MARK:- DataSource & Delegate
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         1
     }
@@ -55,11 +44,11 @@ extension BottlesViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return "\(rangeArray[row])"
+        return "\(rangeArray[row]) мл"
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        bottlesCount = Double(rangeArray[row])
+        model.a = rangeArray[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {

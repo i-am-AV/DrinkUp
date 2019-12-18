@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Result View Controller-->
+        <scene sceneID="jvV-Gg-tRv">
+            <objects>
+                <viewController storyboardIdentifier="ToResultVC" id="02g-fC-7e7" customClass="ResultViewController" customModule="Drink_Up" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dy5-SL-qat">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ugj-w8-3hf">
+                                <rect key="frame" x="20" y="427" width="374" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldS-4u-8HS">
+                                <rect key="frame" x="20" y="775" width="374" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="yOQ-nQ-wpG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <state key="normal" title="В начало">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="G1A-K2-9d9" kind="unwind" unwindAction="home:" id="QCo-fo-jDN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ugj-w8-3hf" firstAttribute="leading" relation="lessThanOrEqual" secondItem="MPr-f9-gic" secondAttribute="leading" constant="20" id="CEa-F7-3aF"/>
+                            <constraint firstItem="MPr-f9-gic" firstAttribute="trailing" secondItem="Ugj-w8-3hf" secondAttribute="trailing" constant="20" id="GmJ-D8-xBx"/>
+                            <constraint firstItem="Ugj-w8-3hf" firstAttribute="centerX" secondItem="Dy5-SL-qat" secondAttribute="centerX" id="P63-gu-UxG"/>
+                            <constraint firstItem="Ugj-w8-3hf" firstAttribute="centerY" secondItem="Dy5-SL-qat" secondAttribute="centerY" id="a9p-di-72h"/>
+                            <constraint firstItem="MPr-f9-gic" firstAttribute="bottom" secondItem="ldS-4u-8HS" secondAttribute="bottom" constant="32" id="k4V-Ch-Xag"/>
+                            <constraint firstItem="ldS-4u-8HS" firstAttribute="leading" secondItem="MPr-f9-gic" secondAttribute="leading" constant="20" id="pAy-lj-Yu9"/>
+                            <constraint firstItem="MPr-f9-gic" firstAttribute="trailing" secondItem="ldS-4u-8HS" secondAttribute="trailing" constant="20" id="wJ5-qe-okT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MPr-f9-gic"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OmD-fI-kBI"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="Ugj-w8-3hf" id="XRX-k0-nwM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3G5-1P-I1H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="G1A-K2-9d9" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4990" y="132"/>
+        </scene>
+    </scenes>
+</document>

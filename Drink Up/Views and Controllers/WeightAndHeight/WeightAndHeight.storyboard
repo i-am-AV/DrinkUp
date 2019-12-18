@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Weight View Controller-->
+        <scene sceneID="ERZ-pT-gj3">
+            <objects>
+                <viewController storyboardIdentifier="ToWeightVC" id="Fr8-6a-ugU" customClass="WeightViewController" customModule="Drink_Up" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cun-6Y-74w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpd-ku-e2G">
+                                <rect key="frame" x="47" y="340" width="320" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynX-RL-DMb">
+                                <rect key="frame" x="20" y="775" width="374" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="zVJ-ye-ymq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <state key="normal" title="Далее">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed" destination="Fr8-6a-ugU" eventType="touchUpInside" id="F4O-jP-1Jp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="c9G-YU-M6S" firstAttribute="bottom" secondItem="ynX-RL-DMb" secondAttribute="bottom" constant="32" id="3Li-Pi-lhL"/>
+                            <constraint firstItem="c9G-YU-M6S" firstAttribute="trailing" secondItem="ynX-RL-DMb" secondAttribute="trailing" constant="20" id="3N0-jT-iT6"/>
+                            <constraint firstItem="ynX-RL-DMb" firstAttribute="leading" secondItem="c9G-YU-M6S" secondAttribute="leading" constant="20" id="I0D-1E-JYf"/>
+                            <constraint firstItem="gpd-ku-e2G" firstAttribute="centerY" secondItem="Cun-6Y-74w" secondAttribute="centerY" id="cAz-0k-N6Y"/>
+                            <constraint firstItem="gpd-ku-e2G" firstAttribute="centerX" secondItem="Cun-6Y-74w" secondAttribute="centerX" id="oho-DR-UoC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c9G-YU-M6S"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="H27-qe-pIN"/>
+                    <connections>
+                        <outlet property="weightPicker" destination="gpd-ku-e2G" id="dPR-vU-6h2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YAT-uO-Ns4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3688" y="132"/>
+        </scene>
+    </scenes>
+</document>

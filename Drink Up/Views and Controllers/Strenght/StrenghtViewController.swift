@@ -9,34 +9,27 @@
 import UIKit
 
 class StrenghtViewController: UIViewController {
-
-    private var strenght = 0.0
+    
+    var model = Model()
     
     @IBAction func buttonPressed(_ sender: UIButton) {
-        
+                
         let tag = sender.tag
         switch tag {
         case 1:
-            strenght = 0.09
+            model.s = .beer
         case 2:
-            strenght = 0.4
+            model.s = .vodka
         case 3:
-            strenght = 0.12
+            model.s = .wine
         default: break
         }
+
+       push()
     }
     
     @IBAction func home(_ segue: UIStoryboardSegue) {
-        
-    }
-    
-    // MARK: - Navigation
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
-        guard let vc = segue.destination as? BottlesViewController else { return }
-    
-        vc.strenght = strenght
+        dismiss(animated: true)
     }
 }
 
