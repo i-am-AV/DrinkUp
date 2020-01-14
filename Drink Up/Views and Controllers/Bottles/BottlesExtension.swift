@@ -11,18 +11,6 @@ import UIKit
 
 extension BottlesViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
-    func push() {
-        let storyboard = UIStoryboard(name: "Sex",
-                                      bundle: nil)
-        
-        let vc = storyboard.instantiateViewController(withIdentifier: "ToSexVC") as? SexViewController
-        vc?.model = model
-        print("\(vc!.model)")
-        navigationController?.pushViewController(vc!,
-                                                 animated: true)
-        navigationItem.title = "Объем выпитого"
-    }
-    
     //MARK:- ViewController life cycle
     
     override func viewDidLoad() {

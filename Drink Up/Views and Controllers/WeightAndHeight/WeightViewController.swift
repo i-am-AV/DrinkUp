@@ -8,15 +8,18 @@
 
 import UIKit
 
-class WeightViewController: UIViewController {
+class WeightViewController: UIViewController, Storyboarded {
     
     var model = Model()
+    weak var coordinator: MainCoordinator!
     
     @IBOutlet weak var weightPicker: UIPickerView!
     let weightArray = Array(20...200)
     let heightArray = Array(120...230)
     
     @IBAction func buttonPressed() {
-        push()
+        coordinator.model.m = model.m
+        coordinator.model.h = model.h
+        coordinator.result()
     }
 }

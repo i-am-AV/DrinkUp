@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="leY-pQ-Syx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -10,16 +10,16 @@
         <!--Strenght View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="StrenghtViewController" customModule="Drink_Up" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StrenghtViewController" id="BYZ-38-t0r" customClass="StrenghtViewController" customModule="Drink_Up" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VSb-Iy-YQv">
-                                <rect key="frame" x="0.0" y="267.5" width="414" height="361"/>
+                                <rect key="frame" x="0.0" y="243.5" width="414" height="409"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cF-40-dH7">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="120.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="136.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                         <state key="normal" title="Пиво">
                                             <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -29,7 +29,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSo-Ka-15T">
-                                        <rect key="frame" x="0.0" y="120.5" width="414" height="120"/>
+                                        <rect key="frame" x="0.0" y="136.5" width="414" height="136"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                         <state key="normal" title="Водка">
                                             <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -39,7 +39,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tt-IX-LO5">
-                                        <rect key="frame" x="0.0" y="240.5" width="414" height="120.5"/>
+                                        <rect key="frame" x="0.0" y="272.5" width="414" height="136.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                         <state key="normal" title="Вино">
                                             <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -64,25 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="855.07246376811599" y="131.91964285714286"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="jcC-8Z-HK4">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="leY-pQ-Syx" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="vbY-hN-OZ0">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="P2k-Rw-IHh"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cFq-fA-y58" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-55.072463768115945" y="131.91964285714286"/>
+            <point key="canvasLocation" x="1765.217391304348" y="131.91964285714286"/>
         </scene>
     </scenes>
 </document>

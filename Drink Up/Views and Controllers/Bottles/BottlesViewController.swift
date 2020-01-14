@@ -8,14 +8,16 @@
 
 import UIKit
 
-class BottlesViewController: UIViewController {
+class BottlesViewController: UIViewController, Storyboarded {
     
     var model = Model()
+    weak var coordinator: MainCoordinator!
     
     @IBOutlet weak var bottlesCountPicker: UIPickerView!
     let rangeArray = (0...100).map { $0 * 100 }
     
     @IBAction func buttonPressed() {
-        push()
+        coordinator.model.a = model.a
+        coordinator.sex()
     }  
 }

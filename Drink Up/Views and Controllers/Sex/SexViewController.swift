@@ -8,9 +8,10 @@
 
 import UIKit
 
-class SexViewController: UIViewController {
+class SexViewController: UIViewController, Storyboarded {
     
-    var model = Model()
+    private var model = Model()
+    weak var coordinator: MainCoordinator!
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         let tag = sender.tag
@@ -23,7 +24,8 @@ class SexViewController: UIViewController {
             model.r = .child
         default: break
         }
-        
-        push()
+     
+        coordinator.model.r = model.r
+        coordinator.weightAndHeight()
     }
 }

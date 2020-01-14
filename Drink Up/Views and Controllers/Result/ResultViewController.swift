@@ -8,14 +8,14 @@
 
 import UIKit
 
-class ResultViewController: UIViewController {
+class ResultViewController: UIViewController, Storyboarded {
     
-    var model = Model()
-    
+    weak var coordinator: MainCoordinator!
     @IBOutlet weak var resultLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        resultLabel.text = "\(model.result)‰"
+        navigationItem.title = "Результат"
+        resultLabel.text = "\(coordinator.model.result)‰"
     }
 }

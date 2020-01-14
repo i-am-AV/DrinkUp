@@ -10,7 +10,7 @@
         <!--Sex View Controller-->
         <scene sceneID="duM-0F-XL8">
             <objects>
-                <viewController storyboardIdentifier="ToSexVC" id="jUI-n8-zEi" customClass="SexViewController" customModule="Drink_Up" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SexViewController" id="jUI-n8-zEi" customClass="SexViewController" customModule="Drink_Up" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Xv-Ej-80X">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

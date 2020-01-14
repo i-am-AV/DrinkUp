@@ -8,9 +8,10 @@
 
 import UIKit
 
-class StrenghtViewController: UIViewController {
+class StrenghtViewController: UIViewController, Storyboarded {
     
-    var model = Model()
+    private var model = Model()
+    weak var coordinator: MainCoordinator!
     
     @IBAction func buttonPressed(_ sender: UIButton) {
                 
@@ -25,11 +26,12 @@ class StrenghtViewController: UIViewController {
         default: break
         }
 
-       push()
+        coordinator.model.s = model.s
+        coordinator.bottles()
     }
     
     @IBAction func home(_ segue: UIStoryboardSegue) {
-        dismiss(animated: true)
+        coordinator?.start()
     }
 }
 

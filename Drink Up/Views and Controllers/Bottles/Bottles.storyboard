@@ -10,7 +10,7 @@
         <!--Bottles View Controller-->
         <scene sceneID="7F9-dw-Oiy">
             <objects>
-                <viewController storyboardIdentifier="ToBottlesVC" id="ZFp-KM-iez" customClass="BottlesViewController" customModule="Drink_Up" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BottlesViewController" id="ZFp-KM-iez" customClass="BottlesViewController" customModule="Drink_Up" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eqW-kc-s2X">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

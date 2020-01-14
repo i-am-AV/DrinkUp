@@ -11,23 +11,14 @@ import UIKit
 
 extension WeightViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
-    func push() {
-        let storyboard = UIStoryboard(name: "Result",
-                                      bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "ToResultVC") as? ResultViewController
-        vc?.model = model
-        print("\(vc!.model)")
-        navigationController?.pushViewController(vc!,
-                                                 animated: true)
-        navigationItem.title = "Вес и рост"
-    }
-    
     // MARK:- ViewController life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         weightPicker.delegate = self
         weightPicker.dataSource = self
+        
+        navigationItem.title = "Вес и рост"
     }
     
     // MARK:- DataSource & Delegate
@@ -54,7 +45,6 @@ extension WeightViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
         
         if component == 0 {
             model.m = weightArray[row]
